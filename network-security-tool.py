@@ -20,9 +20,9 @@ class NetworkSecurityTool:
         
         # Define NIST CSF Categories that will be assessed in this tool
         self.nist_categories = {
-            "Identify": ["Asset Management", "Network Mapping"],   # Identify phase subcategories
-            "Detect": ["Port Scanning", "Service Detection"],      # Detect phase subcategories
-            "Respond": ["Vulnerability Assessment"]                # Respond phase subcategories
+            "Identify": ["Network Mapping","State-Up/Down","Device response while scanning"],   # Identify phase subcategories
+            "Detect": ["Port Scanning","Port accesibility and servicing check"],      # Detect phase subcategories
+            "Respond": ["Vulnerability Assessment","Respond to any unuasual port"]                # Respond phase subcategories
         }
         
         # Call the method to set up the GUI
